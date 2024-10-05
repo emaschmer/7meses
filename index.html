@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz 7 Meses Bebe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Felices 7 Meses Juntos, Mi Amor </h1>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <!-- Aquí añadimos el evento onclick para la imagen principal -->
+            <img src="tu-foto-principal.jpeg" alt="Nosotros" class="main-photo" onclick="handleImageClick()">
+            <p>Los mejores 7 meses de mi vida, con vos a mi lado.</p>
+            <button onclick="showMessage()">Ver Mensaje Especial</button>
+        </div>
+    </section>
+
+    <section class="message hidden" id="special-message">
+        <h2>Un Mensaje Para Ti</h2>
+        <p>Amor, cada día con vos es lo mejor. Estos 7 meses han sido los más increíbles de mi vida. La verdad es que me encanta estar con vos, y quiero pasar muchos más meses y años a tu lado. Me hace tan feliz saber que estamos cumpliendo un mes más juntos. A pesar de que hemos pasado por momentos buenos y malos, hemos superado todo, y eso solo me hace admirarte más. Sé que en el futuro pasaremos por muchas cosas, pero estoy seguro de que juntos vamos a lograr todo lo que soñamos y lo que nos propongamos.</p>
+        <p>Cada día a tu lado me llena de felicidad, de alegría, y me hace sentir completo. Amo cómo sos, amo tu cuerpo, tu forma de ser, amo absolutamente todo de vos. Para mí, sos perfecta. Y aunque sé que nadie es perfecto, para mí vos lo sos en todo sentido. Espero siempre poder ser lo mejor para vos, como vos lo sos para mí.</p>
+        <p>Desde que estamos juntos, me has hecho sentir emociones que jamás había sentido antes. Me hiciste sentir valorado, amado, protegido, feliz, bien, y sobre todo, me hiciste sentir escuchado, apoyado, y entendido. Me demostraste que nunca estoy solo. Sos una compañera increíble, la mejor novia, una hija maravillosa, y en general sos excelente en todo lo que hacés. De verdad, sos lo mejor de lo mejor en mi vida.</p>
+        <p>Siempre voy a estar a tu lado, nunca te voy a dejar solita. Sos todo para mí. Mis ojos brillan solo por vos, y todo lo que he logrado fue gracias a tu apoyo, a tu amor, a nunca dejarme solo. Te amo muchísimo, más de lo que las palabras pueden expresar. Te amo y quiero todo con vos. Quiero estar siempre a tu lado, sos mi cosita hermosa, mi bebita linda, mi mujer, y mi todo.</p>
+        <p>No solo me has dado amor, sino que también me has enseñado lo que realmente significa amar a alguien sin condiciones. Me encanta cada detalle que compartimos, desde las pequeñas risas hasta las largas conversaciones que nunca quiero que terminen. Aunque sea a la distancia tus abrazos  son mi refugio, tus besos mi fuente de paz. Vos sos mi lugar favorito en el mundo, donde quiero estar siempre.</p>
+        <p>Todo lo que hago, lo hago pensando en vos. Sos mi inspiración y mi razón de ser. Prometo estar a tu lado en cada paso que demos, en cada sueño que persigamos, y en cada reto que enfrentemos. Con vos a mi lado, siento que puedo lograr cualquier cosa. No hay nada que nos detenga cuando estamos juntos.</p>
+        <p>Te amo con todo lo que soy, más allá de lo que puedo expresar con palabras. Cada día contigo es una bendición, y estoy agradecido por tenerte en mi vida. No puedo esperar a ver todo lo que el futuro nos tiene preparado, pero sé que será maravilloso porque estarás a mi lado. ¡Te amo, mi vida, mi todo!</p>
+        <p>Este mensaje lo escribí con todo mi corazón. Espero que te guste, porque está lleno de todo mi amor para vos. ¡Te amo con toda mi alma, mi vida entera! ❤️</p>
+        <p>Con mucho amor lo escribi bebita hermozaaa</p>
+    </section>
+    
+
+    <section class="gallery">
+        <h2>Nuestros Momentos Especiales</h2>
+        <div class="photos">
+            <img src="foto1.jpeg" alt="Foto 1">
+            <img src="foto2.png" alt="Foto 2">
+            <img src="foto3.jpeg" alt="Foto 3">
+            <img src="foto4.png" alt="Foto 4">
+            <img src="Captura de pantalla (1254).png" alt="Foto 5">
+            <img src="Captura de pantalla (1256).png" alt="Foto 6">
+            <img src="foto7.jpg" alt="Foto 7">
+            <img src="foto8.jpeg" alt="Foto 8">
+            <img src="foto5.jpg" alt="Foto 9">
+            <img src="foto10.jpg" alt="Foto 10">
+            <img src="foto6.jpg" alt="Foto 11">
+            <img src="foto12.jpg" alt="Foto 12">
+            <img src="foto13.png" alt="Foto 13">
+            <img src="foto11.png" alt="Foto 14">
+            <img src="foto15.png" alt="Foto 15">
+            <img src="foto16.png" alt="Foto 16">
+            <img src="foto17.png" alt="Foto 17">
+            <img src="foto18.png" alt="Foto 18">
+            <img src="foto19.png" alt="Foto 19">
+            <img src="foto20.png" alt="Foto 20">
+            <img src="foto21.png" alt="Foto 21">
+            <img src="foto14.jpg" alt="Foto 22">
+            <img src="foto23.png" alt="Foto 23">
+            <img src="foto24.png" alt="Foto 24">
+            <img src="foto25.png" alt="Foto 25">
+            <img src="foto26.png" alt="Foto 26">
+            <img src="foto27.png" alt="Foto 27">
+            <img src="foto28.png" alt="Foto 28">
+            <img src="foto9.jpg" alt="Foto 29">
+            <img src="foto22.jpeg" alt="Foto 30">
+        </div>
+    </section>
+
+    
+
+    <section class="countdown">
+        <h2>Faltan para nuestro 1er Año:</h2>
+        <p id="countdown"></p>
+    </section>
+
+    <section class="music">
+        
+        <audio id="background-music" src="cancion.mp3" type="audio/mpeg" autoplay loop></audio>
+    </section>
+
+    <footer>
+        <p>Con todo mi amor, Ema Tu bebito lindo ♥</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Script para la cuenta regresiva al 6 de marzo de 2025
+        var countDownDate = new Date("Mar 6, 2025 00:00:00").getTime();
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            document.getElementById("countdown").innerHTML = days + " días";
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "¡Feliz 1er Año!";
+            }
+        }, 1000);
+    </script>
+    <script>
+        // Script para el mensaje especial
+        function showMessage() {
+            var message = document.getElementById("special-message");
+            if (message.classList.contains("hidden")) {
+                message.classList.remove("hidden");
+                message.style.display = "block";
+            } else {
+                message.classList.add("hidden");
+                message.style.display = "none";
+            }
+        }
+
+        function handleImageClick() {
+            var audio = document.getElementById("background-music");
+            audio.play().catch(function(error) {
+                console.log("El navegador impidió la reproducción automática: ", error);
+            });
+        }
+    </script>
+
+</body>
+</html>

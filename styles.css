@@ -1,0 +1,239 @@
+/* Estilos generales para todos los dispositivos */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6e6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff5e6c;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    animation: fadeIn 2s ease;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff9a9e;
+    padding: 3em 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    animation: fadeIn 2s ease;
+}
+
+.hero img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.hero p {
+    font-size: 1.5em;
+    color: white;
+    margin: 1em 0;
+}
+
+.hero button {
+    background-color: #ff5e6c;
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #e74c5e;
+}
+
+.gallery {
+    padding: 3em 1em;
+    background-color: #ffe0e0;
+    text-align: center;
+}
+
+.gallery h2 {
+    color: #ff5e6c;
+    margin-bottom: 2em;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.photos img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.photos img:hover {
+    transform: scale(1.1);
+}
+
+.message {
+    display: none;
+    background-color: #f8dada;
+    padding: 2em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.message h2 {
+    color: #ff5e6c;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background-color: #ff5e6c;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Optimización para el Samsung A14 (pantallas pequeñas) */
+@media (max-width: 480px) {
+    body {
+        padding: 0 5px; /* Márgenes laterales más reducidos */
+        font-size: 14px; /* Texto general más pequeño */
+    }
+
+    header h1 {
+        font-size: 1.8em; /* Título más pequeño */
+        padding: 1em 0; /* Menos espacio en el header */
+    }
+
+    .hero img {
+        width: 100px; /* Imagen más pequeña */
+        height: 100px;
+    }
+
+    .hero p {
+        font-size: 1em; /* Texto más pequeño */
+        margin: 1em 0.5em; /* Ajuste de márgenes */
+    }
+
+    .hero button {
+        font-size: 0.9em; /* Tamaño del botón reducido */
+        padding: 0.5em 1em; /* Botón más pequeño */
+    }
+
+    .gallery h2 {
+        font-size: 1.4em; /* Título más pequeño */
+    }
+
+    .photos img {
+        width: 100px; /* Fotos más pequeñas */
+        height: 100px;
+    }
+
+    .message h2 {
+        font-size: 1.4em; /* Título del mensaje más pequeño */
+    }
+
+    .message p {
+        font-size: 1em; /* Texto más pequeño en el mensaje */
+    }
+
+    .countdown p {
+        font-size: 1.5em; /* Texto de cuenta regresiva más pequeño */
+    }
+
+    .video-section video {
+        width: 100%; /* El video ocupa todo el ancho */
+        height: auto;
+    }
+
+    .audio-control audio {
+        width: 100%; /* El audio ocupa todo el ancho */
+    }
+
+    footer p {
+        font-size: 0.8em; /* Texto en el pie más pequeño */
+    }
+
+    /* Espacios adicionales entre secciones */
+    section {
+        margin-bottom: 1.5em;
+    }
+}
+/* Estilos para la sección de la cuenta regresiva en PC */
+.countdown {
+    background-color: #ffebee;
+    padding: 2em;
+    text-align: center;
+    margin: 3em 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.countdown h2 {
+    color: #ff5e6c;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.countdown p {
+    font-size: 3em;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+/* Animación de pulso para destacar el número */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Adaptaciones para pantallas pequeñas (como Samsung A14) */
+@media (max-width: 480px) {
+    .countdown {
+        padding: 1.5em;
+        margin: 2em 0;
+    }
+
+    .countdown h2 {
+        font-size: 1.8em;
+        margin-bottom: 0.8em;
+    }
+
+    .countdown p {
+        font-size: 2em;
+    }
+}
